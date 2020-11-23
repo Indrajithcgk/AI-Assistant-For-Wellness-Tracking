@@ -1,0 +1,81 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ask_lower_stress
+- ask_eat_healthy
+- ask_exercise
+- inform
+- out_of_scope
+- thankyou
+entities:
+- exercise
+- sleep
+- stress
+slots:
+  confirm_exercise:
+    type: unfeaturized
+    influence_conversation: false
+  diet:
+    type: unfeaturized
+    influence_conversation: false
+  exercise:
+    type: unfeaturized
+    influence_conversation: false
+  goal:
+    type: unfeaturized
+    influence_conversation: false
+  sleep:
+    type: unfeaturized
+    influence_conversation: false
+  stress:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hi! Its time for your dialy wellness check. Tracking healthy habits is a
+      great way to measure your progress over time. Would you lie to answer few questions
+      acout your health?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_stress_info:
+  - text: It's okay to feel overwhelmed at times. Try to set realistic expectations
+      and exercise time managment techniques, like dividing large tasks into more
+      manageable pieces. Relaxation techniques, deep breathing and meditation can
+      also be beneficial.
+  utter_exercise_info:
+  - text: Most healthy adults should aim to get about 150min of moderate exercise
+      per week. This includes activities like jogging or playing outdoor sports.
+  utter_diet_info:
+  - text: A healthy diet includes fruits and veggies, whole grains, diary, lean protein,
+      and fats. Aim for variety of food, and balance
+  utter_ask_confirm_exercise:
+  - text: Did you exercise yesterday?
+  utter_ask_sleep:
+  - text: How much sleep did you get last night?
+  utter_ask_exercise:
+  - text: What kind of exercise did you do?
+  utter_ask_diet:
+  - text: Did you stick to healthy diet yesterday?
+actions:
+- utter_greet
+- form{"name":"health_form"}
+- form{"name":"null"}
+forms:
+  health_form: {}

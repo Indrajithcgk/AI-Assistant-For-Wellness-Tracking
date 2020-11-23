@@ -1,0 +1,150 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - see you
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - okay
+    - ok
+    - why not
+    - ok great
+    - yes I did
+    - yeah, great
+    - pretty good
+    - fine
+    - you bet
+    - I sure did
+    - more or less
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - none
+    - No, I did'nt
+    - absolutely not
+    - not great
+    - nope
+- intent: inform
+  examples: |
+    - a full [8 hours](sleep)
+    - only [four hours](sleep)
+    - about [6 hours] of (sleep)
+    - [low](stress)
+    - [medium](stress)
+    - [high](stress)
+    - Yes, I went for (run)[exercise]
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - No way
+    - you are no help
+    - waste of time
+    - I don't want to tell you that
+    - stop asking
+    - nevermind
+    - none of your business
+    - that's not right
+    - stop asking
+    - I want to do something else
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: thankyou
+  examples: |
+    - okay great thanks
+    - sure thanks
+    - thanks bye
+    - thanks
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_lower_stress
+  examples: |
+    - What do I do if I am too stressed?
+    - How can I lower my stress level?
+    - What are good ways to relax?
+    - What are some things to lower my stress?
+- intent: ask_eat_healthy
+  examples: |
+    - What's considered a healthy diet?
+    - What's considered a good diet?
+    - What's an example of healthy diet?
+    - How do I eat healthy?
+- intent: ask_exercise
+  examples: |
+    - What's good amount of exercise for me?
+    - How much exercise should I be getting?
+    - How much exercise is recomended?
+    - How much of exercise should I do everyday?
